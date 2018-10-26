@@ -15,7 +15,7 @@ $WorkingDir = Get-Location
 
 If (Test-Path -path "$WorkingDir\domainlist.csv" -ErrorAction SilentlyContinue)
 {
-	$SitestoScan = Import-CSV -Path = "$WorkingDir\domainlist.csv"
+	$SitestoScan = Import-CSV -Path "$WorkingDir\domainlist.csv"
 }
 else
 {
